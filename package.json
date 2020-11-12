@@ -3,8 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@types/d3": "^6.1.0",
+    "@types/dc": "^0.0.29",
     "@types/react": "^16.8.2",
     "@types/react-dom": "^16.8.0",
+    "crossfilter2": "^1.5.4",
+    "d3": "^6.2.0",
+    "dc": "^4.2.0",
+    "glamor": "^2.20.40",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },

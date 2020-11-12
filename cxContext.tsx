@@ -41,7 +41,7 @@ export class DataContext extends React.Component<{}, DataContextState> {
     }
 
     this.setState({ loading: true });
-    d3.csv<keyof NDXRow>('./data/med_EveryBead.csv')
+    d3.csv<keyof NDXRow>('https://raw.githubusercontent.com/parksj10/dc-React-StackBlitz/master/data/med_EveryBead.csv')
       .then((parsed: d3.DSVRowArray<string>) => {
         const data: NDXRow[] = parsed.map((row) => ({
           index: Number(row['']),
