@@ -2,7 +2,6 @@
 import React, { RefObject } from 'react';
 import crossfilter from 'crossfilter2';
 import * as d3 from 'd3';
-import './dc.css';
 import { ContextType, NDXRow } from './types';
 
 type DataContextState = { loading: boolean; hasNDX: boolean };
