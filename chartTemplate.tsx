@@ -3,23 +3,23 @@
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React from 'react';
-import * as dc from 'dc';
-import { css, StyleAttribute } from 'glamor';
-import { CXContext } from './cxContext';
+import React from "react";
+import * as dc from "dc";
+import { css, StyleAttribute } from "glamor";
+import { CXContext } from "./cxContext";
 // import { rhythm } from '../../utils/typography';
-import { ContextType, DCGraphicType } from './types';
+import { ContextType, DCGraphicType } from "./types";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ResetButton = (props: any) => {
   const style = css({
     // padding: rhythm(0.1),
-    display: 'inline',
-    cursor: 'pointer',
-    float: 'right',
-    '&:hover': {
-      background: '#ddd',
-    },
+    display: "inline",
+    cursor: "pointer",
+    float: "right",
+    "&:hover": {
+      background: "#ddd"
+    }
   });
   return (
     <span
@@ -38,7 +38,7 @@ const ResetButton = (props: any) => {
 export const ChartTemplate = (props: {
   chartFunction: (
     divRef: HTMLDivElement,
-    ndx: ContextType['ndx']
+    ndx: ContextType["ndx"]
   ) => DCGraphicType;
 
   // eslint-disable-next-line react/require-default-props
@@ -68,14 +68,14 @@ export const ChartTemplate = (props: {
   /* Run this exactly once */
 
   const chartStyles = css({
-    width: '100%',
-    height: 'auto',
-    boxSizing: 'border-box',
+    width: "100%",
+    height: "auto",
+    boxSizing: "border-box",
     // padding: rhythm(1),
-    '& label': {
-      textTransform: 'capitalize',
-      textDecoration: 'underline',
-    },
+    "& label": {
+      textTransform: "capitalize",
+      textDecoration: "underline"
+    }
   });
   return (
     <div ref={div} {...chartStyles}>
